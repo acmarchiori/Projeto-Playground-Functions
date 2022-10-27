@@ -1,15 +1,14 @@
 // Desafio 1
 function compareTrue(girafa, elefante) {
-  if (girafa && elefante == true) {
+  if (girafa && elefante === true) {
   return true;
-  }
-return false
+}
+  return false;
 }
 
-
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return (base * height) / 2;
 }
 
 // Desafio 3
