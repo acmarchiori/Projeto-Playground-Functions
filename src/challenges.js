@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue() {
-  // seu código aqui
+  // iniciando projeto playground funcion
 }
 
 // Desafio 2
