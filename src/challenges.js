@@ -13,13 +13,16 @@ const calcArea = (base, height) => (base * height) / 2;
 const splitSentence = frase => frase.split(' ');
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(frase) {
+//   for (let = i in frase)
+//   return frase.reverse().join().len;
 }
 
+// console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + ties;
 }
 
 // Desafio 6
