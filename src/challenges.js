@@ -1,7 +1,11 @@
 // Desafio 1
-function compareTrue() {
-  // iniciando projeto playground funcion
+function compareTrue(girafa, elefante) {
+  if (girafa && elefante == true) {
+  return true;
+  }
+return false
 }
+
 
 // Desafio 2
 function calcArea() {
