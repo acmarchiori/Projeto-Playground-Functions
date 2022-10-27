@@ -14,11 +14,8 @@ const splitSentence = frase => frase.split(' ');
 
 // Desafio 4
 function concatName(frase) {
-//   for (let = i in frase)
-//   return frase.reverse().join().len;
+  return (`${frase[frase.length-1]}, ${frase[0]}`);
 }
-
-// console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -31,8 +28,15 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if ((mouse - cat1) < (mouse - cat2)){
+    return 'cat1';
+}
+else if ((mouse - cat1) > (mouse - cat2)) {
+    return 'cat2';
+}
+else if ((mouse - cat1) == (mouse - cat2)) {}
+    return 'os gatos trombam e o rato foge.'; 
 }
 
 // Desafio 8
