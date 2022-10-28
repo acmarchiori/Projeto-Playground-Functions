@@ -58,11 +58,44 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+const encode = (frase) => {
+  let frase2 = [];
+  for (let i in frase) {
+    if (frase[i] == 'a') {
+      frase2.push(1);
+    } else if (frase[i] == 'e') {
+      frase2.push(2);
+    } else if (frase[i] == 'i') {
+      frase2.push(3);
+    } else if (frase[i] == 'o') {
+      frase2.push(4);
+    } else if (frase[i] == 'u') {
+      frase2.push(5)
+    } else {
+      frase2.push(frase[i])
+    }
+  }
+  return frase2.join('');
 }
-function decode() {
-  // seu código aqui
+
+const decode = (frase) => {
+  let frase2 = [];
+  for (let i in frase) {
+    if (frase[i] == 1) {
+      frase2.push('a');
+    } else if (frase[i] == 2) {
+      frase2.push('e');
+    } else if (frase[i] == 3) {
+      frase2.push('i');
+    } else if (frase[i] == 4) {
+      frase2.push('o');
+    } else if (frase[i] == 5) {
+      frase2.push('u');
+    } else {
+      frase2.push(frase[i])
+    }
+  }
+  return frase2.join('');
 }
 
 // Desafio 10
