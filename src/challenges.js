@@ -44,7 +44,7 @@ function catAndMouse(mouse, cat1, cat2) {
   let gatoPega = ' ';
   const positionCat1 = Math.abs(mouse - cat1);
   const positionCat2 = Math.abs(mouse - cat2);
-  (positionCat1 > positionCat2) ? gatoPega = 'cat2' : gatoPega = 'cat1';
+  positionCat1 > positionCat2 ? gatoPega = 'cat2' : gatoPega = 'cat1';
   if (positionCat1 === positionCat2) {
     gatoPega = 'os gatos trombam e o rato foge';
   }
@@ -73,15 +73,15 @@ function fizzBuzz(array) {
 const encode = (frase) => {
   let frase2 = [];
   for (let i in frase) {
-    if (frase[i] == 'a') {
+    if (frase[i] === 'a') {
       frase2.push(1);
-    } else if (frase[i] == 'e') {
+    } else if (frase[i] === 'e') {
       frase2.push(2);
-    } else if (frase[i] == 'i') {
+    } else if (frase[i] === 'i') {
       frase2.push(3);
-    } else if (frase[i] == 'o') {
+    } else if (frase[i] === 'o') {
       frase2.push(4);
-    } else if (frase[i] == 'u') {
+    } else if (frase[i] === 'u') {
       frase2.push(5);
     } else {
       frase2.push(frase[i]);
@@ -126,7 +126,7 @@ function techList(tecnologias, nome) {
   }
   return array;
 }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],'Lucas'))
+
 module.exports = {
   calcArea,
   catAndMouse,
